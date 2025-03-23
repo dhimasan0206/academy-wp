@@ -12,7 +12,6 @@ services:
       WORDPRESS_DB_NAME: exampledb
     volumes:
       - wordpress:/var/www/html
-      - ./wp-content:/var/www/html/wp-content
   db:
     image: mysql:8.0
     restart: unless-stopped
